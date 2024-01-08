@@ -5,10 +5,13 @@ import Particles from "./components/particles";
 const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
+  { name: "Members", href: "/members" },
 ];
 
 export default function Home() {
   return (
+    <div className="overflow-hidden">
+
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
@@ -38,6 +41,10 @@ export default function Home() {
           ONE LOOK - ALL SIGHT
         </h2>
       </div>
+    </div>
+    {/* <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden">
+    Hello
+    </div> */}
     </div>
   );
 

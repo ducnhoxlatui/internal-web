@@ -6,6 +6,9 @@ const nextConfig = {
 	experimental: {
 		mdxRs: true,
 	},
+	images: {
+		domains: ['photos.google.com', 'lh3.googleusercontent.com'],
+	  },
 };
 
 export default withContentlayer(nextConfig);
