@@ -20,7 +20,7 @@ const page = () => {
                                 <div className={styles.card}>
                                     <div className={styles.content}>
                                         <div className={styles.back}>
-                                            <button className={styles.back_content} onClick={ () => dirrectPage(obj.No, obj)}>
+                                            <button className={styles.back_content} onClick={ () => router.push(`/members/${obj.No}`,)}>
                                                 <div className={styles.imgBx}><Image className={styles.img} sizes='100vw' width={100} height={100} src={obj.Color} alt={'Profile Picture'}></Image></div>
                                                 <h3 className={styles.name_content}> {obj.Name}<br></br><span className={styles.span}>Developer</span></h3>
                                             </button>
