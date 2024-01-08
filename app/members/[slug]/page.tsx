@@ -16,8 +16,6 @@ const Profile = () => {
     console.log(profile);
   }, [pathname])
 
-
-
   return (
     <div className="flex justify-center items-center h-screen ">
       <Navigation/>
