@@ -52,7 +52,7 @@ export default function Guild() {
           {socials.map((s) => (
             <Card key={s.label}>
               <div
-                target="_blank"
+                // target="_blank"
                 className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-[96px]  md:p-16 pd-[96px]"
               >
                 <div className="z-10 flex flex-col items-center">
