@@ -4,21 +4,19 @@ import { usePathname, useSearchParams } from 'next/navigation';
 import profiles from '@/public/data.json';
 import Image from 'next/image';
 import { Navigation } from '@/app/components/nav';
+import styles from '@/public/styles/memberid.module.css'
 
 const Profile = () => {
   const pathname = usePathname();
   const extractedSlug = pathname?.split("/")[2];
+  
   const profile = profiles.find((profile) => {
     return profile.No === extractedSlug;
   });
 
-  useEffect(() => {
-    console.log(profile);
-  }, [pathname])
-
   return (
     <div className="flex justify-center items-center h-screen ">
-      <Navigation/>
+      <Navigation />
       <div className="card flex flex-col md:flex-row justify-around items-center bg-gray-800 shadow-xl rounded-xl overflow-hidden w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2">
         <div className="left-container w-full md:w-1/3 bg-gray-700 flex flex-col items-center py-8 px-4">
           <Image sizes='100vw' width={100} height={100} src={profile?.Color} alt="Profile" className="w-40 h-40 rounded-full shadow" />
@@ -54,9 +52,6 @@ const Profile = () => {
         </div>
       </div>
     </div>
-
-
-
   )
 }
 
