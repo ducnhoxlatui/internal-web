@@ -35,7 +35,7 @@ export const Navigation: React.FC = () => {
 							Timeline
 						</Link>
 						<Link
-							href="/contact"
+							href="/guild"
 							className="duration-200 text-zinc-400 hover:text-zinc-100"
 						>
 							Guilds
