@@ -2,6 +2,7 @@ import { Navigation } from '@/app/components/nav'
 import React from 'react'
 import Image from 'next/image'
 import pic from '@/public/images/avatar.jpg'
+import bg from '@/public/images/Year-end.png'
 
 const Blog = () => {
 
@@ -18,12 +19,12 @@ const Blog = () => {
                         </a>
                     </div>
                     <div className='mr-20 flex w-full max-w-3xl flex-col justify-start md:w-3/4'>
-                        <h2>
+                        <h2 className='text-3xl'>
                             <a href="/posts/earth-the-ultimate-playground">
-                                Earth: The Ultimate Playground
+                                YEP 2023
                             </a>
                         </h2>
-                        <div className="flex flex-col justify-between space-y-4 pb-8 md:flex-row md:space-y-0"><div className="flex items-center space-x-2 text-zinc-500 dark:text-zinc-400 md:space-y-0">
+                        <div className="flex flex-col justify-between space-y-4 pb-8 md:flex-row md:space-y-0 mt-[10px]"><div className="flex items-center space-x-2 text-zinc-500 dark:text-zinc-400 md:space-y-0">
                             <a href="/author/jane-doe">
                                 <Image
                                     alt="Earth: The Ultimate Playground"
@@ -38,14 +39,41 @@ const Blog = () => {
                             </a>
                             <div className="flex space-x-1">
                                 <span>by</span>
-                                <a href="/author/jane-doe" className="font-medium text-green-600 dark:text-green-200">
-                                    Jane Doe
+                                <a href="" className="font-medium text-green-600 dark:text-green-200">
+                                    Orca
                                 </a>
-                                <span>on Jan 3, 2023
+                                <span>on Jan 10, 2024
                                 </span>
                             </div>
                         </div>
                         </div>
+                        <hr className="w-full border-t border-zinc-300 pb-8 dark:border-zinc-700"></hr>
+                        <div>
+                            <Image
+                                alt="The Colorful World of Synesthesia"
+                                loading="lazy"
+                                // width={300} height={200}
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                quality={100}
+                                decoding="async" data-nimg="1"
+                                className="w-full rounded-lg"
+                                src={bg}
+                            />
+                            <p id="isPasted" className='mt-[25px]'>
+                                Hi Team @all.
+                                <br></br>
+                                Orca xin gửi mọi người thiệp mời tham dự Looker Year-end Party 🎆🎇
+                                Mọi thông tin chi tiết về thời gian và địa điểm đã có trong thiệp mời.
+                                <br></br>
+                                Lưu ý: Party có khách mời đặc biệt là sếp Byeon nên mọi người sắp xếp đến đúng thời gian trên thiệp mời nhé.
+                                <br></br>
+                                Mặc dù đã có form khảo sát chốt số lượng người tham dự trước đó nhưng nếu thành viên nào đã điền form "không thể tham dự" mà nay đã sắp xếp được lịch trình cá nhân và có thể tham dự thì chủ động liên hệ ORCA để bổ sung danh sách, giúp cho công tác chuẩn bị được chu đáo hơn nhé.
+                                <br></br>
+                                Cảm ơn mọi người!
+                                Orca Team.
+                            </p>
+                        </div>
+                        <hr className="w-full border-t border-zinc-300 mt-[32px] dark:border-zinc-700"></hr>
                     </div>
                 </div>
             </div>
