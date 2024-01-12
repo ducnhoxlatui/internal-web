@@ -11,9 +11,9 @@ import Image from 'next/image'
 
 const socials = [
   {
-    label: "Unicore",
-    handle: "GM: Aki",
-    pic: unicorn,
+    label: "Orca",
+    handle: "GM: Yahiko",
+    pic: orca,
   },
   {
     label: "Badger",
@@ -27,9 +27,9 @@ const socials = [
     pic: taurus,
   },
   {
-    label: "Orca",
-    handle: "GM: Yahiko",
-    pic: orca,
+    label: "Unicore",
+    handle: "GM: Lennon",
+    pic: unicorn,
   },
   {
     label: "Phoenix",

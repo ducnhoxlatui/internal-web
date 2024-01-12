@@ -58,7 +58,8 @@ export const Navigation: React.FC = () => {
 						href="/"
 						className="duration-200 text-zinc-300 hover:text-zinc-100"
 					>
-						<ArrowLeft className="w-6 h-6 " />
+						{/* <ArrowLeft className="w-6 h-6 " /> */}
+						LOOKER
 					</Link>
 				</div>
 			</div>
