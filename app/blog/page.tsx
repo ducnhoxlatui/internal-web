@@ -8,7 +8,6 @@ import chrismast from '@/public/images/Christmas.png'
 
 
 const Announcement = () => {
-
     return (
         <div>
             <Navigation />
