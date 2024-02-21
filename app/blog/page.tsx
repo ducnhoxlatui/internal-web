@@ -12,7 +12,7 @@ import { redirect } from 'next/navigation'
 
 const Announcement = async () => {
 
-    const session = await getServerSession(authConfig);
+    // const session = await getServerSession(authConfig);
 
     // if(!session) {
     //     redirect('/api/auth/signin');
