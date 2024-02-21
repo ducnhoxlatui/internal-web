@@ -20,7 +20,7 @@ const Profile = () => {
       <Navigation />
       <div className="card flex flex-col md:flex-row justify-around items-center bg-gray-800 shadow-xl rounded-xl overflow-hidden w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2">
         <div className="left-container w-full md:w-1/3 bg-gray-700 flex flex-col items-center py-8 px-4">
-          <Image sizes='100vw' width={100} height={100} src={profile.Color} alt="Profile" className="w-40 h-40 rounded-full shadow" />
+          <Image sizes='100vw' width={100} height={100} src={profile?.['Color']} alt="Profile" className="w-40 h-40 rounded-full shadow" />
           <h2 className="text-2xl font-semibold text-gray-200 mt-4">{profile?.['English Name']}</h2>
           <p className="text-md text-gray-400 mt-2">Developer</p>
         </div>

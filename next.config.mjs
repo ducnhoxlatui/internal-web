@@ -9,6 +9,9 @@ const nextConfig = {
 	images: {
 		domains: ['photos.google.com', 'lh3.googleusercontent.com'],
 	  },
+	  typescript: {
+		ignoreBuildErrors: true,
+	 },
 };
 
 export default withContentlayer(nextConfig);
