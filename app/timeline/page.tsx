@@ -301,10 +301,6 @@ const Timeline = () => {
                                 </div>
                             </div>  
                         </div>
-
-
-
-
                     </div>
                 </div>
             </section>

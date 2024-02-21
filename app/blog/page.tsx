@@ -5,9 +5,19 @@ import Image from 'next/image'
 import pic from '@/public/images/avatar.jpg'
 import bg from '@/public/images/Year-end.png'
 import chrismast from '@/public/images/Christmas.png'
+import { authConfig } from '@/lib/auth'
+import { getServerSession } from 'next-auth'
+import { redirect } from 'next/navigation'
 
 
-const Announcement = () => {
+const Announcement = async () => {
+
+    const session = await getServerSession(authConfig);
+
+    // if(!session) {
+    //     redirect('/api/auth/signin');
+    // }
+
     return (
         <div>
             <Navigation />
